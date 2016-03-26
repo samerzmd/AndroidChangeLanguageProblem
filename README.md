@@ -1,8 +1,8 @@
-# AndroidChangeLanguageProblem
+# Android Change Language Problem
 
-this sample shows that the new android support libraries disallowed changeing the language in runtime 
+this sample shows that the new android support libraries disallowed changing the language in runtime 
 
-#Usage 
+# Usage 
 
 change the dependence in MyAppliction/app/build.gradle 
 
