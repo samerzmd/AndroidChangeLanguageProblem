@@ -37,3 +37,8 @@ in the not solved you'll find that i have restarted the hole app XD
         mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 1000, mPendingIntent);
         System.exit(0);
  ```
+ 
+ 
+ # Update 2
+ 
+it seems i was updating the the ctx and then load a new context, i'm convinced that this's the right thing, however why it was  working ?_?
