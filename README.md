@@ -1,4 +1,6 @@
 # Android Change Language Problem
+see the stackoverflow question [here] (http://stackoverflow.com/questions/36281616/changing-languages-in-app-with-the-new-support-libraries) for more informaiton about the problem
+
 
 this sample shows that the new android support libraries disallowed changing the language in runtime 
 
