@@ -20,19 +20,13 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         INSTANCE = this;
-
-        updateLanguage(this);
     }
 
     public static App getInstance() {
         return INSTANCE;
     }
 
-    public static void updateLanguage(Context ctx) {
-        String lang = getString(ctx, LANGUAGE);
 
-        updateLanguage(ctx, lang==null?"en":lang);
-    }
 
     public static void updateLanguage(Context ctx, String lang) {
         Configuration cfg = new Configuration();

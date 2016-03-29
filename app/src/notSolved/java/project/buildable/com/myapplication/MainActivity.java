@@ -11,15 +11,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        String lang = App.getString(MainActivity.this, App.LANGUAGE);
+
+        App.updateLanguage(MainActivity.this, lang.equals("en") ? "ar" : "en");
+
         setContentView(R.layout.activity_main);
     }
 
-    public void ChangeLanguage(View view){
-        String lang= App.getString(MainActivity.this,App.LANGUAGE);
-            App.updateLanguage(MainActivity.this, lang.equals("en") ? "ar" : "en");
-            MainActivity.startActivity(this);
+    public void ChangeLanguage(View view) {
+        MainActivity.startActivity(this);
     }
-    public static void startActivity(Context context){
+
+    public static void startActivity(Context context) {
         Intent intent = new Intent(context, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                 | Intent.FLAG_ACTIVITY_CLEAR_TOP);
