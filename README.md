@@ -26,7 +26,7 @@ to see the solution i have add two builds variants :
 1) solved
 2) not solved 
 
-in the not solved you'll find that i have restarted the hole app XD
+in the solved you'll find that i have restarted the hole app XD
 
  ```
         Intent mStartActivity = new Intent(context, MainActivity.class);
